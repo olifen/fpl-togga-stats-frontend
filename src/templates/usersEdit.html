@@ -1,0 +1,30 @@
+<section>
+  <h1>Edit User</h1>
+  <form novalidate ng-submit="usersEdit.update()">
+    <div>
+      <label for="username">Username</label>
+      <div>
+        <input type="text" placeholder="Username" name="username" ng-model="usersEdit.user.username">
+      </div>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <div>
+        <input type="email" placeholder="Email" name="email" ng-model="usersEdit.user.email">
+      </div>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <div>
+        <input type="password" placeholder="Password" name="password" ng-model="usersEdit.user.password">
+      </div>
+    </div>
+    <div>
+      <label for="passwordconfirmation">Password Confirmation</label>
+      <div>
+        <input type="password" placeholder="Password Confirmation" name="passwordconfirmation" ng-model="usersEdit.user.password_confirmation">
+      </div>
+    </div>
+    <button>Update</button>
+  </form>
+</section>

@@ -1,9 +1,11 @@
 <section>
-  <h1>Users Show</h1>
-  <ul>
-    <li ng-repeat="user in usersIndex.all">
-      <h2>{{ user.username }}</h2>
-      <h4>{{ user.email }}</h4>
-    </li>
-  </ul>
+  <h1>Users Index</h1>
+  <div class="card col-md-2" ng-repeat="user in usersIndex.all">
+    <div>
+      <a ui-sref="usersShow({ id: user.id })">
+        <h4>{{ user.username }}</h4>
+      </a>
+      <p>{{ user.email }}</p>
+    </div>
+  </div>
 </section>

@@ -1,0 +1,6 @@
+<section>
+  <h1>{{ usersShow.user.username }}</h1>
+  <p>{{ usersShow.user.email }}</p>
+  <button ui-sref="usersEdit({ id: usersShow.user.id })">Edit</button>
+  <button ng-click="usersShow.delete()">Delete</button>
+</section>
